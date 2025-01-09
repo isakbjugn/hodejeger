@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <h1>🕵🏼‍ Mafia</h1>
+      <h1>🕵🏼‍ Hodejeger</h1>
       <button onClick={publishSubscribe}>Testknappen</button>
       {user ? <Home /> : <Login />}
     </>

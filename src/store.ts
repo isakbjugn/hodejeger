@@ -10,7 +10,7 @@ export type User = {
 }
 
 type UserState = {
-  user: User | undefined,
+  user?: User,
   setUser: (userData: User) => void,
   fetchUser: () => Promise<void>,
   logoutUser: () => void,
