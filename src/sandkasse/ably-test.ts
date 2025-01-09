@@ -8,7 +8,9 @@ export async function publishSubscribe() {
 
     ably.connection.on((stateChange) => {
         console.log('New connection state is ' + stateChange.current);
-        console.log('Reason ', stateChange.reason)
+        if (stateChange.reason && stateChange.reason.code != 80017) {
+            console.log('Reason ', stateChange.reason);
+        }
     });
 
     // Create a channel called 'get-started' and register a listener to subscribe to all messages with the name 'first'
