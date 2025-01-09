@@ -4,7 +4,7 @@ import logger from 'morgan';
 
 import loginRouter from './routes/login';
 import authRouter from './routes/auth';
-import ablyAuthRouter from './routes/ablyAuth';
+import messageAuthRouter from './routes/message-auth';
 import usersRouter from './routes/users';
 import eventsRouter from './routes/events';
 import duelsRouter from './routes/duels';
@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 app.use('/login', loginRouter);
 app.use('/auth', authRouter);
-app.use('/messageAuth', ablyAuthRouter)
+app.use('/message-auth', messageAuthRouter)
 app.use('/users', usersRouter);
 app.use('/events', eventsRouter);
 app.use('/duels', duelsRouter);

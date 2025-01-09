@@ -3,7 +3,7 @@ import { Login } from "./components/login.tsx";
 import { useUserStore } from "./store.ts";
 import { Home } from "./components/home.tsx";
 import { useEffect } from "react";
-import { publishSubscribe } from './sandkasse/ablyTest.ts'
+import { publishSubscribe } from './sandkasse/ably-test.ts'
 
 function App() {
   const user = useUserStore(state => state.user);

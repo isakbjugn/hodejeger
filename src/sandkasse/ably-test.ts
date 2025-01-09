@@ -3,7 +3,7 @@ export async function publishSubscribe() {
 
     // Connect to Ably with your API key
     const ably = new Ably.Realtime({
-        authUrl: "http://localhost:3000/messageAuth",
+        authUrl: "http://localhost:3000/message-auth",
     })
 
     ably.connection.on((stateChange) => {
