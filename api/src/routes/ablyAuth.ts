@@ -2,10 +2,8 @@ import cors from "../cors";
 import express from "express";
 import Ably, {Types} from "ably";
 
-
-
 const router = express.Router();
-const ablyRestClient = new Ably.Rest({key: "7VsshQ.Y83ptw:jLIWHW5YgvUjoqAdKchJt3OQL-fG05seAvqSYe4kV7A"})
+const ablyRestClient = new Ably.Rest({ key: process.env.ABLY_API_KEY as string })
 
 router.route('/')
   .options(cors.corsWithSpecifiedOriginAndCredentials, (req, res) => {
