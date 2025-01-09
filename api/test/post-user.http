@@ -3,7 +3,7 @@
 # curl -X POST http://localhost:3000/trigger-event
 #     -H "Content-Type: application/json"
 #     -d '{"message": "Isak vant"}'
-POST http://localhost:3000/users/signup
+POST {{host}}/users/signup
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 ###
 ###
 
-POST http://localhost:3000/users/signup/many
+POST {{host}}/users/signup/many
 Content-Type: application/json
 
 {

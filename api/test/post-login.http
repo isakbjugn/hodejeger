@@ -3,12 +3,12 @@
 # curl -X POST http://localhost:3000/trigger-event
 #     -H "Content-Type: application/json"
 #     -d '{"message": "Isak vant"}'
-POST http://localhost:3000/login
+POST {{host}}/login
 Content-Type: application/json
 
 {
   "email": "isakbjugn@gmail.com",
-  "password": "indiajujube-15"
+  "password": "appelsin-0"
 }
 
 ###

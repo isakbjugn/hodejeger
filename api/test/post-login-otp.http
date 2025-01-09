@@ -3,25 +3,11 @@
 # curl -X POST http://localhost:3000/trigger-event
 #     -H "Content-Type: application/json"
 #     -d '{"message": "Isak vant"}'
-POST http://localhost:3000/login/otp
+POST {{host}}/login/otp
 Content-Type: application/json
 
 {
   "email": "isakbjugn@gmail.com"
-}
-
-###
-
-###
-
-# curl -X POST http://localhost:3000/trigger-event
-#     -H "Content-Type: application/json"
-#     -d '{"message": "Isak vant"}'
-POST http://localhost:3000/login/otp
-Content-Type: application/json
-
-{
-  "email": "isak.kyrre.lichtwarck.bjugn@sparebank1.no"
 }
 
 ###

@@ -185,7 +185,7 @@ export const prisma = new PrismaClient().$extends({
 })
 
 const createPassword = () => {
-  const passComponents = (process.env.PASS_COMPONENTS as string).split(', ');
+  const passComponents = (process.env.PASS_COMPONENTS as string).split(',');
   const randomPassComponent = passComponents[Math.floor(Math.random() * passComponents.length)]
   const randomInt = Math.floor(Math.random() * 100);
   return `${randomPassComponent}-${randomInt}`
